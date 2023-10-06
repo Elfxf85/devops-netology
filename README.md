@@ -27,3 +27,4 @@ terraform.rc
 
 #---- New line
 #test line 2
+It`s cool to use Pycharm as GUI interface 
