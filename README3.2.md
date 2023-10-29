@@ -40,7 +40,7 @@ IaaC позволяет существенно сократить по врем�
  попытаться получить последние изменения без предыдущих, что может привести к проблемам с установкой обновлениий. 
  Так же  при этом нет централизованой информации   о статусе обновлений как может быть в случае "push".
  
- 
+ sudo pip3 install ansible[azure]
  
 ##  задача 3
 
@@ -83,29 +83,38 @@ root@server1:~# vboxmanage -v
 Vagrant
 ```console
 -- 
-.........
-Processing triggers for install-info (6.8-4build1) ...
-Processing triggers for fontconfig (2.13.1-4.2ubuntu5) ...
-Processing triggers for initramfs-tools (0.140ubuntu13.4) ...
-update-initramfs: Generating /boot/initrd.img-6.2.0-35-generic
-Processing triggers for hicolor-icon-theme (0.17-2) ...
-Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
-Processing triggers for man-db (2.10.2-1) ...
-Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
-root@server1:~# vagrant -v
-Vagrant 2.2.19
-
+elfxf@Valtorn:/usr/local/bin$ sudo apt-get update && sudo apt-get install vagrant
+Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:2 https://apt.releases.hashicorp.com jammy InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:5 https://ppa.launchpadcontent.net/ansible/ansible/ubuntu jammy InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  vagrant
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/150 MB of archives.
+After this operation, 383 MB of additional disk space will be used.
+Selecting previously unselected package vagrant.
+(Reading database ... 76808 files and directories currently installed.)
+Preparing to unpack .../vagrant_2.4.0-1_amd64.deb ...
+Unpacking vagrant (2.4.0-1) ...
+Setting up vagrant (2.4.0-1) ...
+elfxf@Valtorn:/usr/local/bin$ vagrant -v
+Vagrant 2.4.0
 ```
 Terraform версии 1.5.Х
 ```console
--- 
-root@server1:/usr/local/bin# terraform -version
+elfxf@Valtorn:~$ terraform -v
 Terraform v1.5.7
 on linux_amd64
 
 Your version of Terraform is out of date! The latest version
 is 1.6.2. You can update by downloading from https://www.terraform.io/downloads.html
-
 ```
 
 Ansible
@@ -141,10 +150,13 @@ Vagrant,
 Terraform версии 1.5.Х (
 Ansible.
 
-
+```console
+elfxf@server1:~/test/vagrant$ sudo vagrant up
 Bringing machine 'server1.netology' up with 'virtualbox' provider...
+==> server1.netology: Importing base box 'bento/ubuntu-20.04'...
+==> server1.netology: Matching MAC address for NAT networking...
 ==> server1.netology: Checking if box 'bento/ubuntu-20.04' version '202309.09.0' is up to date...
-==> server1.netology: Clearing any previously set forwarded ports...
+==> server1.netology: Setting the name of the VM: server1.netology
 ==> server1.netology: Clearing any previously set network interfaces...
 ==> server1.netology: Preparing network interfaces based on configuration...
     server1.netology: Adapter 1: nat
@@ -154,18 +166,56 @@ Bringing machine 'server1.netology' up with 'virtualbox' provider...
     server1.netology: 22 (guest) => 2222 (host) (adapter 1)
 ==> server1.netology: Running 'pre-boot' VM customizations...
 ==> server1.netology: Booting VM...
-There was an error while executing `VBoxManage`, a CLI used by Vagrant
-for controlling VirtualBox. The command and stderr is shown below.
+==> server1.netology: Waiting for machine to boot. This may take a few minutes...
+    server1.netology: SSH address: 127.0.0.1:2222
+    server1.netology: SSH username: elfxf
+    server1.netology: SSH auth method: private key
+    server1.netology: Warning: Connection reset. Retrying...
+    server1.netology: 
+    server1.netology: Vagrant insecure key detected. Vagrant will automatically replace
+    server1.netology: this with a newly generated keypair for better security.
+    server1.netology: 
+    server1.netology: Inserting generated public key within guest...
+    server1.netology: Removing insecure key from the guest if it's present...
+    server1.netology: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> server1.netology: Machine booted and ready!
+==> server1.netology: Checking for guest additions in VM...
+==> server1.netology: Setting hostname...
+==> server1.netology: Configuring and enabling network interfaces...
+==> server1.netology: Mounting shared folders...
+    server1.netology: /vagrant => /home/elfxf/test/vagrant
+==> server1.netology: Running provisioner: ansible...
+    server1.netology: Running ansible-playbook...
 
-Command: ["startvm", "4bfc8f0a-c1af-40b8-bb08-af530e90fd4f", "--type", "headless"]
+PLAY [nodes] *******************************************************************
 
-Stderr: VBoxManage: error: AMD-V is not available (VERR_SVM_NO_SVM)
-VBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component ConsoleWrap, interface IConsole
+TASK [Gathering Facts] *********************************************************
+ok: [server1.netology]
 
-root@server1:~# vboxmanage list vms
-"server1.netology" {4bfc8f0a-c1af-40b8-bb08-af530e90fd4f}
+TASK [Create directory for ssh-keys] *******************************************
+ok: [server1.netology]
 
+TASK [Adding rsa-key in /root/.ssh/authorized_keys] ****************************
+changed: [server1.netology]
 
+TASK [Checking DNS] ************************************************************
+changed: [server1.netology]
 
+TASK [Installing tools] ********************************************************
+ok: [server1.netology] => (item=git)
+ok: [server1.netology] => (item=curl)
 
-https://www.comss.ru/page.php?id=7726 - не помогла
+TASK [Installing docker] *******************************************************
+changed: [server1.netology]
+
+TASK [Add the current user to docker group] ************************************
+changed: [server1.netology]
+
+PLAY RECAP *********************************************************************
+server1.netology           : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+elfxf@server1:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+elfxf@server1:~$ 
+
+```
