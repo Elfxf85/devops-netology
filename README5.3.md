@@ -32,11 +32,10 @@ dockerfile содержит
 
 FROM nginx
 RUN  echo "<html><head>Hey, Netology</head><body><h1>I’m DevOps Engineer!</h1></body></html>" >/usr/share/nginx/html/index.html
-
+------
 запускаем сборку
-```console
 docker build -t elfxf85/el-nginx:1.0 
-
+------
 root@server1:~# docker build -t elfxf85/nginxsvr1:1.0 .
 [+] Building 7.3s (7/7) FINISHED                                                                         docker:default
  => [internal] load .dockerignore                                                                                  0.0s
