@@ -32,10 +32,11 @@ dockerfile содержит
 
 FROM nginx
 RUN  echo "<html><head>Hey, Netology</head><body><h1>I’m DevOps Engineer!</h1></body></html>" >/usr/share/nginx/html/index.html
-------
+
 запускаем сборку
+```console
 docker build -t elfxf85/el-nginx:1.0 
-------
+
 root@server1:~# docker build -t elfxf85/nginxsvr1:1.0 .
 [+] Building 7.3s (7/7) FINISHED                                                                         docker:default
  => [internal] load .dockerignore                                                                                  0.0s
@@ -69,7 +70,7 @@ hello-world         latest    9c7a54a9a43c   6 months ago    13.3kB
 
   - `--rm` - удаление контейнера после его остановки;
 
-  - `--name myn` - присвоение создаваемому контейнеру имени `myn`
+  - `--name mycntnr` - присвоение создаваемому контейнеру имени `mycntnr`
 
 ```console
 
