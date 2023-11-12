@@ -125,7 +125,7 @@ Build 'yandex' finished after 3 minutes 27 seconds.
 
 Результат:
 
-![task_1](img/task1.jpg)
+![task_1](img/task1.png)
 
 
 
@@ -182,7 +182,7 @@ See https://ubuntu.com/esm or run: sudo pro status
 Last login: Sun Nov 12 12:23:35 2023 from 62.217.189.172
 ```
 Скриншот
-![task_2](img/task2.jpg)
+![task_2](img/task2.png)
 
 
 
@@ -231,4 +231,4 @@ caddy exited with code 2
 
 
 Скриншот
-![task_2](img/task3.jpg)
+![task_2](img/task3.png)
