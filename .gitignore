@@ -2,3 +2,11 @@
 
 clonnedrepo/
 .idea/
+
+**/.terraform/*
+.terraform*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.tfvars
