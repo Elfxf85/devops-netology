@@ -1,0 +1,189 @@
+[33mcommit 1edab26bf7ebfba2c03e0f1ab8bf02f1354d3b76[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Dec 1 01:21:01 2023 +0300
+
+    terraform 1st task
+
+[33mcommit 82edaff696edf2205ecc7d407937007a0b691d21[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Wed Nov 15 00:33:38 2023 +0300
+
+    add 5.5 homework
+
+[33mcommit ff8bb4b77355990780ea979ece1276b15ec0a107[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Nov 13 13:52:40 2023 +0300
+
+    5.4 v3 fixed
+
+[33mcommit eef9020b9dd1b9d90c2ab92b151f6370fd2a2392[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Nov 12 19:19:33 2023 +0300
+
+    add 5.4 v3
+
+[33mcommit 3db1d9f472276d0eb3463fa7533046b3efe522de[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Nov 12 19:16:08 2023 +0300
+
+    add 5.4 v2
+
+[33mcommit 8ada5a4fca51a53b1e20597a1b70966069fa7323[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Nov 12 19:11:31 2023 +0300
+
+    add 5.4 v1
+
+[33mcommit b56cdc8f690926abfd712327d23c4170b32c7e44[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Nov 12 19:10:14 2023 +0300
+
+    add 5.4
+
+[33mcommit 65a7792072acf36c0f933476a3ec6c942ef17908[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Nov 5 15:54:05 2023 +0300
+
+    fixed 4 step
+
+[33mcommit 71a2ba93ca5eb47ee5003eb3b3455e2f95d1e0f2[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Nov 3 09:21:56 2023 +0300
+
+    add readme file for 5.3 task v2.1
+
+[33mcommit 62a8b03925cbf98cb93006b90c44ec8bd33b399b[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Nov 3 09:20:26 2023 +0300
+
+    Revert "add readme file for 5.3 task v2"
+    
+    This reverts commit d808f6e8f4f6f0cf6c3a9c5330afd356ecf031af.
+
+[33mcommit d808f6e8f4f6f0cf6c3a9c5330afd356ecf031af[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Nov 3 09:14:34 2023 +0300
+
+    add readme file for 5.3 task v2
+
+[33mcommit 8a9e82f3af3540ecb8b2ee0bf6e94885baeb73dc[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Nov 3 09:11:12 2023 +0300
+
+    add readme file for 5.3 task
+
+[33mcommit 395449df2522107444011a9e08663bd28156903f[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 29 16:39:51 2023 +0300
+
+    readme3.2.fixed
+
+[33mcommit c96381c3c9a0564c855e7a113b18930b8fbad67c[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Fri Oct 27 10:52:21 2023 +0300
+
+    homework 3.2 IAC
+
+[33mcommit 3783968d58dcb80e7f47cc715728f8480469378a[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Wed Oct 18 23:04:05 2023 +0300
+
+    answer for 3.1 virtualistion
+
+[33mcommit 6e0c6626db3fab85cdc40dcc65c492f132e33271[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 15 22:27:51 2023 +0300
+
+    add answer 2.4
+
+[33mcommit e255f0b5ca4aa22cd94119b8e56ebc3f0985f521[m[33m ([m[1;31morigin/git-rebase[m[33m, [m[1;31mbitbucket/main[m[33m, [m[1;32mgit-rebase[m[33m)[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 23:03:53 2023 +0300
+
+    git-rebase 2
+
+[33mcommit a4bb4b59e8830cc72329a0ef1696725774ef758d[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 23:02:01 2023 +0300
+
+    git-rebase 1
+
+[33mcommit caf4b2e874abfdc242c4c60f5277f60c1cf9a8d2[m
+Merge: 1190535 5ac3b46
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Wed Oct 11 21:27:44 2023 +0300
+
+    Merge branch 'git-merge' into HEAD
+
+[33mcommit 119053517a6dc56199a19948d7307588620c11d9[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 22:55:44 2023 +0300
+
+    main branch edit rebase
+
+[33mcommit 928132a4632e7bf07b00ee22d1ae2e69ddd5cceb[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 22:48:27 2023 +0300
+
+    prepare for merge and rebas
+
+[33mcommit 5ac3b465496f4f03ddf6d7e8bc3fc216ce95f2b8[m[33m ([m[1;32mgit-merge[m[33m)[m
+Merge: 4c05e9d e2c3076
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 22:37:41 2023 +0300
+
+    Merge branch 'git-merge' of https://github.com/Elfxf85/devops-netology into git-merge
+
+[33mcommit 4c05e9da41c209a5d5c2ba95143b6d6b8a6ab88a[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 21:51:28 2023 +0300
+
+    Pycharm commit 2
+
+[33mcommit e2c30762ff428b2a2323a646e116ff549b69cd94[m[33m ([m[1;31morigin/git-merge[m[33m)[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 21:59:17 2023 +0300
+
+    merge: use shift
+
+[33mcommit 329d682ce112e512aed7b3bbca634bf465149bff[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 21:55:10 2023 +0300
+
+    merge: @ instead *
+
+[33mcommit dd52b1f39537a851c16d6418728cc0a4a0a0da44[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Mon Oct 9 21:51:28 2023 +0300
+
+    prepare for merge and rebase
+
+[33mcommit aa386a6ed273d7a13afbd8d38f6667673eb7b888[m[33m ([m[1;33mtag: v0.1[m[33m, [m[1;33mtag: v0.0[m[33m, [m[1;31mgitlab/main[m[33m)[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 1 23:21:45 2023 +0300
+
+    Moved and deleted
+
+[33mcommit 100c1200b84eee61c066ac45a500e542b51dbf41[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 1 23:14:17 2023 +0300
+
+    Prepare to delete and move
+
+[33mcommit f7777baf51f4d72dc2eeeb7dc5e40f7061d6e828[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 1 23:09:20 2023 +0300
+
+    Added gitignore
+
+[33mcommit 2012e63e273885d39db81d3f4fab76d856df2cfc[m
+Author: Ivan Mikurov <ivancad33@gmail.com>
+Date:   Sun Oct 1 22:50:20 2023 +0300
+
+    First commit
+
+[33mcommit 556072aeb6d6b43d3038e6bf5ce2ea85ad15bea9[m
+Author: Elfxf85 <145868766+Elfxf85@users.noreply.github.com>
+Date:   Sun Oct 1 22:32:37 2023 +0300
+
+    Initial commit
