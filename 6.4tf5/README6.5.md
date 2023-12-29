@@ -76,11 +76,6 @@ docker run --rm --tty --volume $(pwd):/tf --workdir /tf bridgecrew/checkov \
 
 2. Проверил код с помощью tflint и checkov, исправил все предупреждения и ошибки в 'terraform-hotfix', сделал коммит:
 
-```console
-
-```
-
-![img_10.png](IMG/img_10.png)
 
 3. Создал новый pull request 'terraform-hotfix' --> 'terraform-05'.
 
