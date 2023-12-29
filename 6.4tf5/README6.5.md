@@ -76,13 +76,12 @@ docker run --rm --tty --volume $(pwd):/tf --workdir /tf bridgecrew/checkov \
 
 2. Проверил код с помощью tflint и checkov, исправил все предупреждения и ошибки в 'terraform-hotfix', сделал коммит:
 
-
 3. Создал новый pull request 'terraform-hotfix' --> 'terraform-05'.
 
 4. Добавил в него комментарий с результатом работы tflint и checkov.
 
 5. Ссылка на PR для ревью:
 
-https://github.com
+https://github.com/Elfxf85/devops-netology/pull/1/files
 
 ------
