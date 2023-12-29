@@ -52,13 +52,37 @@ docker run --rm --tty --volume $(pwd):/tf --workdir /tf bridgecrew/checkov \
 ![task_2_5](img/task2_5.png)
 ![task_2_6](img/task2_6.png)
 
-3. Закоммитил изменения в ветку terraform-05. [Ссылка](https://github.com/Elfxf85/devops-netology/tree/terraform-04/6.4tf4/src).
+3. Закоммитил изменения в ветку terraform-05. [Ссылка](https://github.com/Elfxf85/devops-netology/tree/terraform-05/6.4tf5/src).
 
 4. Открываю terraform console, а в другом окне из этой же директории запускаю terraform apply.
 
 5. Ответ об ошибке доступа к state:
 ![task_2_7](img/task2_7.png)
 
-
 6. Принудительно разблокирую state:
 ![task_2_8](img/task2_8.png)
+
+### Задание 3
+
+1. Сделайте в GitHub из ветки 'terraform-05' новую ветку 'terraform-hotfix'.
+2. Проверьте код с помощью tflint и checkov, исправьте все предупреждения и ошибки в 'terraform-hotfix', сделайте коммит.
+3. Откройте новый pull request 'terraform-hotfix' --> 'terraform-05'. 
+4. Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
+5. Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно.
+
+### Решение 3
+
+1. В GitHub из ветки 'terraform-05' создал новую ветку 'terraform-hotfix'.
+
+2. Проверил код с помощью tflint и checkov, исправил все предупреждения и ошибки в 'terraform-hotfix', сделал коммит:
+
+
+3. Создал новый pull request 'terraform-hotfix' --> 'terraform-05'.
+
+4. Добавил в него комментарий с результатом работы tflint и checkov.
+
+5. Ссылка на PR для ревью:
+
+https://github.com
+
+------
