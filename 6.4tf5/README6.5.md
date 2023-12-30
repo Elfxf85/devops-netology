@@ -82,3 +82,5 @@ docker run --rm --tty --volume $(pwd):/tf --workdir /tf bridgecrew/checkov \
 Если в адресах есть ошибки, то terraform console выведет результат с ошибками:
 
 ![task_4_2](img/task4_2.png)
+
+Ссылка на переменные с валидацией [Ссылка] https://github.com/Elfxf85/devops-netology/blob/terraform-05/6.4tf5/src/variables2.tf
