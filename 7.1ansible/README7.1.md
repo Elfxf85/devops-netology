@@ -19,7 +19,7 @@
 ## Решение 
 
 1. Запускаю playbook, вижу что значение, которое находится в `some_fact` - 12:
-![img_1.png](IMG/task2.png)
+![task1.png](IMG/task1.png)
 
 2. some_fact: all default fact
 3. Использую `docker` окружение.
@@ -31,32 +31,32 @@ docker run -dit --rm --name centos7 centos:latest
 
 4. Запускаю playbook на окружении из prod. Получаю следующие значения `some_fact`:
 
-![img_2.png](IMG/task2.png)
+![task2.png](IMG/task2.png)
 
 5. Добавил факты в group_vars каждой из групп хостов так, для some_fact получились значения: для deb — deb default fact, для el — el default fact.
 
 6. Повторяю запуск окружения `prod.yml`. Получаю следующие значения `some_fact`:
 
-![img_3.png](IMG/task3.png)
+![task3.png](IMG/task3.png)
 
 7. При помощи `ansible-vault` шифрую факты в `group_vars/deb` и `group_vars/el` с паролем `netnetology`:
 
-![img_4.png](IMG/task4.png)
+![task4.png](IMG/task4.png)
 
 Зашифрованные файлы выглядят так:
 
-![img_5.png](IMG/task5.png)
+![task5.png](IMG/task5.png)
 
 8. Запускаю playbook на окружении `prod.yml`. При запуске `ansible` запрашивает пароль:
 
-![img_8.png](IMG/task6.png)
+![task6.png](IMG/task6.png)
 Работает.
 
 9. При помощи ansible-doc смотрю список плагинов для подключения. Подходящий для работы на control node:
  ```console
 ansible.builtin.ssh            connect via SSH client binary
 ```
-![img_9.png](IMG/task9.png)
+![task9.png](IMG/task9.png)
 
 10. В `prod.yml` добавил новую группу хостов с именем  `local`, в ней разместил localhost с нужным типом подключения:
  ```console
@@ -69,7 +69,7 @@ ansible.builtin.ssh            connect via SSH client binary
 
 11. Запустил playbook на окружении `prod.yml`. При запуске `ansible` запросил пароль. Факты `some_fact` для каждого из хостов получились следующими:
 
-![img_11.png](IMG/task11.png)
+![task11.png](IMG/task11.png)
 
 12. Заполнил README.md, запушил в свой репозиторий. [Ссылка](https://github.com/Elfxf85/devops-netology/tree/main/7.1ansible/playbook) на playbook.
 13. Скриншоты предоставлены.
@@ -87,7 +87,7 @@ ansible.builtin.ssh            connect via SSH client binary
 
 1. При помощи `ansible-vault` расшифровал все зашифрованные файлы с переменными:
 
-![img_12.png](IMG/task12.png)
+![task12.png](IMG/task12.png)
 
 Расшифрованные файлы стали текстовыми.
 
@@ -106,14 +106,14 @@ ansible.builtin.ssh            connect via SSH client binary
 ```
 3. Запустил `playbook`, для нужного хоста применился новый `fact`:
 
-![img_13.png](IMG/task13.png)
+![task13.png](IMG/task13.png)
 
 4. Добавил новую группу хостов `fedora`, написал для неё переменную. Новый факт выглядит так:
 
-![img_14.png](IMG/img_14.png)
+![task14.png](IMG/task14.png)
 
 5. Написал скрипт на bash, который пуллит контейнеры, запускает их, выполняет playbook и останавливает контейнеры. 
 
-![img_15.png](IMG/img_15.png)
+![task15.png](IMG/task15.png)
 
 6. Запушил изменения кода и скрипт в репозиторий.  [Ссылка](https://github.com/Elfxf85/devops-netology/tree/main/7.1ansible/playbook)
