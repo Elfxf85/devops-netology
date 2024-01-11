@@ -71,7 +71,7 @@ ansible.builtin.ssh            connect via SSH client binary
 
 ![img_11.png](IMG/task11.png)
 
-12. Заполнил README.md, запушил в свой репозиторий. [Ссылка](https://github.com/) на playbook.
+12. Заполнил README.md, запушил в свой репозиторий. [Ссылка](https://github.com/Elfxf85/devops-netology/tree/main/7.1ansible/playbook) на playbook.
 13. Скриншоты предоставлены.
 
 ## Необязательная часть
@@ -116,4 +116,4 @@ ansible.builtin.ssh            connect via SSH client binary
 
 ![img_15.png](IMG/img_15.png)
 
-6. Запушил изменения кода и скрипт в репозиторий. [Ссылка](https://github.com
+6. Запушил изменения кода и скрипт в репозиторий.  [Ссылка](https://github.com/Elfxf85/devops-netology/tree/main/7.1ansible/playbook)
