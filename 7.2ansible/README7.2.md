@@ -19,7 +19,8 @@
 
 1. Подготовил свой inventory-файл `prod.yml`:
 
-[task_1_1](img/task1.png)
+![task_1](img/task1.png)
+
 
 Для установки Vector and Clickhouse буду использовать виртуальный сервер в Yandex Cloud, Centos7.
 
@@ -61,19 +62,19 @@ vector-01                  : ok=3    changed=1    unreachable=0    failed=1    s
 
 6. Запускаю playbook с флагом `--check`. Флаг `--check` не вносит изменения в конечную систему. Выполнение плейбука невозможно с этим флагом, т.к. нет скачанных файлов дистрибутива, а значит нечего устанавливать:
 
-[task_1_6](img/task6.png)
-[task_1_61](img/task61.png)
+![task_1_6](img/task6.png)
+![task_1_61](img/task61.png)
 
 
 7. Запускаю playbook с флагом `--diff`. Флаг позволяет отслеживать изменения в файлах на удаленных хостах, чтобы можно было видеть, какие конкретные изменения будут внесены на хостах в результате выполнения плейбука.
 
-[task_1_7](img/task7.png)
-[task_1_71](img/task71.png)
+![task_1_7](img/task7.png)
+![task_1_71](img/task71.png)
 
 
 8. Повторно запускаю playbook с флагом `--diff`,  playbook идемпотентен, за исключением части запуска Vector:
 
-[task_1_8](img/task8.png)
+![task_1_8](img/task8.png)
 
 9.  Подготовил README.md-файл по  playbook Ссылка на описание Playbook: https://github.com/Elfxf85/devops-netology/blob/main/7.2ansible/src/playbook/README.md
 
