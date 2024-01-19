@@ -1,0 +1,16 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_connection: ssh
+      ansible_ssh_user: elfxf
+      ansible_host: 51.250.95.153
+      
+
+vector:
+  hosts:
+    vector-01:
+      ansible_connection: ssh
+      ansible_ssh_user: elfxf
+      ansible_host: 51.250.95.153
+      
