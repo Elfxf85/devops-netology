@@ -75,6 +75,6 @@ vector-01                  : ok=3    changed=1    unreachable=0    failed=1    s
 
 [task_1_8](img/task8.png)
 
-9.  Подготовил README.md-файл по  playbook Ссылка на описание Playbook: https://github.com/
+9.  Подготовил README.md-файл по  playbook Ссылка на описание Playbook: https://github.com/Elfxf85/devops-netology/blob/main/7.2ansible/src/playbook/README.md
 
 
