@@ -37,7 +37,7 @@
 
 1. В в старой версии playbook создал файл requirements.yml с указанным содержимым:
 
-![img_1.png](IMG/task1.png)
+![img_1.png](img/task1.png)
 
 2. Скачал роль с помощью `ansible-galaxy`, появилась директория `roles` с субдиректорией `clickhouse`, в которой находится playbook для установки роли clickhouse.
 
@@ -59,6 +59,6 @@ https://github.com/Elfxf85/devops-netology/blob/main/lighthouse-role
 
 9. Изменил playbook на использование roles.
 
-10. Выложил playbook в репозиторий. Ссылка на playbook: https://github.com/Elfxf85/devops-netology/blob/main/7.3ansible/src
+10. Выложил playbook в репозиторий. Ссылка на playbook: https://github.com/Elfxf85/devops-netology/blob/main/7.4ansible/src
 
 ---
