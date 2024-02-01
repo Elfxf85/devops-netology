@@ -1,47 +1,38 @@
 Role Name
 =========
 
-Deploy Vector to selected hosts.
+A brief description of the role goes here.
 
 Requirements
 ------------
 
-Ansible >= 2.10.4 version installed.
+Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
 Role Variables
 --------------
 
-
-| Name              | Default Value                                                       | Description                    |
-|-------------------|---------------------------------------------------------------------|--------------------------------|
-| vector_url        | https://packages.timber.io/vector/0.33.1/vector-0.33.1-1.x86_64.rpm | Download source                |
-| vector_config_dir | /etc/vector                                                         | Install path                   |
-| data_dir          | /var/lib/vector                                                     | Vector data directory          |
-| sources           |                                                                     | For Vector configuration       |
-| sinks             |                                                                     | Connect to clickhouse settings |
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
 Dependencies
 ------------
 
-No dependencies
+A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - name: Install Vector
-      hosts: vector
+    - hosts: servers
       roles:
-        - vector-role
-      tags: vector
+         - { role: username.rolename, x: 42 }
 
 License
 -------
 
-Free
+BSD
 
 Author Information
 ------------------
 
-Ivan M
+An optional section for the role authors to include contact information, or a website (HTML is not allowed).
