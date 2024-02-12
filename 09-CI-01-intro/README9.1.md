@@ -55,5 +55,5 @@ Workflow для всех остальных типов задач:
 
 ## Выгруженные схемы Workflow:
 
-* [bug workflow](https://github.com//Workflows/Bug.xml)
-* [other workflow](https://github.com//Workflows/Other.xml)
+* [bug workflow](https://github.com/Elfxf85/devops-netology/blob/main/09-CI-01-intro/Workflows/Bug.xml)
+* [other workflow](https://github.com/Elfxf85/devops-netology/blob/main/09-CI-01-intro/Workflows/Other.xml)
