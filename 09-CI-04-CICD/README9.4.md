@@ -130,7 +130,7 @@ pipeline {
 
 Ссылка на Declarative Pipeline: https://github.com/Elfxf85/vector-role-m/blob/main/Jenkinsfile
 
-Ссылка на Scripted Pipeline: https://github.com/netology-code/mnt-homeworks/blob/MNT-video/09-ci-04-jenkins/pipeline
+Ссылка на Scripted Pipeline: https://github.com/Elfxf85/devops-netology/blob/main/09-CI-04-CICD/src/ScriptedJenkinsfile
 
 
 ## Необязательная часть
@@ -139,4 +139,4 @@ pipeline {
 2. Создать Scripted Pipeline так, чтобы он мог сначала запустить через Yandex Cloud CLI необходимое количество инстансов, прописать их в инвентори плейбука и после этого запускать плейбук. Мы должны при нажатии кнопки получить готовую к использованию систему.
 
 
-## Необязательную часть решил не делать потому что не разобрался совсем и не понял для чего вообще это делать.
+## Необязательную часть решил не делать потому что не разобрался совсем .
