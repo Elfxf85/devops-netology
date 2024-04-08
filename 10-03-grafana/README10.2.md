@@ -63,7 +63,7 @@
 
 ![Alt text](img/task1.png)
 
-Все конфигурации, скрипты, манифесты, которые  использовались в процессе решения задания доступны по ссылке: https://github.com/
+Все конфигурации, скрипты, манифесты, которые  использовались в процессе решения задания доступны по ссылке: https://github.com/Elfxf85/devops-netology/tree/main/10-03-grafana/src/grafana_prom
 
 2. Зашел в web-интерфейс Grafana. По умолчанию логин и пароль admin/admin, но при первом входе предлагается изменить пароль:
 
@@ -128,8 +128,7 @@ node_filesystem_avail_bytes
 
 1. Сохранил Dashboard в json файл.
 
-2. Ссылка на файл: https://github.com/
-
+2. Ссылка на файл: https://github.com/Elfxf85/devops-netology/blob/main/10-03-grafana/src/dashboard/dashboard.json
 ---
 
 
