@@ -158,10 +158,10 @@ Pull-системы мониторинга:
 
 ![Alt text](img/image_2.png)
 #
-9. Установил Docker Input Plugin для Telegraf, настроил его. Возникли проблемы с разрешением на доступ Telegraf к `/var/run/docker.sock`. После решения этой проблемы, удалось получить метрики от docker контейнеров:
+9. Установил Docker Input Plugin для Telegraf. Возникли проблемы с доступом Telegraf к `/var/run/docker.sock`. Исправил, удалось получить метрики от docker контейнеров:
 
 ![Alt text](img/image_3.png)
 
 ## Дополнительное задание* (со звёздочкой) 
 
-# не сделал
+# не делал
