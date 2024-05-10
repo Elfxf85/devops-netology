@@ -94,4 +94,4 @@
 
 3. Авторизуюсь в Kubernetes Dashboard:
 
-![img_7](IMG/img_71.png)
+![img_7](IMG/task71.png)
