@@ -21,7 +21,7 @@
 1. Написал манифест для пода.
 2. Указал имя пода hello-world, указал образ gcr.io/kubernetes-e2e-test-images/echoserver:2.2:
 
-![img_1](IMG/task1.png)
+![img_1](IMG/task11.png)
 
 2. Создал под и запустил его:
 
