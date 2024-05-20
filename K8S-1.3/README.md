@@ -45,46 +45,46 @@
 
 3. До масштабирования  был один под:
 
-![img_5](IMG/task5.png)
+![img_5](IMG/task3.png)
 
 После масштабирования стало два пода:
 
-![img_6](IMG/task6.png)
+![img_6](IMG/task5.png)
 
 4. Пишу манифест Service с именем nginx-multitool-svc в namespace netology. Применяю манифест:
 
-![img_7](IMG/task7.png)
+![img_7](IMG/task6.png)
 
 
 Проверяю сервисы в namespace netology:
 
-![img_8](IMG/task8.png)
+![img_8](IMG/task7.png)
 
 Сервис создан.
 
 5. Пишу манифест отдельного пода multitool в namespace netology. Применяю манифест:
 
-![img_9](IMG/task9.png)
+![img_9](IMG/task8.png)
 
 Проверяю поды в namespace netology:
 
-![img_10](IMG/task10.png)
+![img_10](IMG/task9.png)
 
 Видно, что под с именем multitool был создан и запущен.
 
 С помощью `curl`, проверяю, есть ли из пода multitool доступ до приложений из п.1.:
 
-![img_11](IMG/task11.png)
+![img_11](IMG/task10.png)
 
 При обращении на порт 80 сервиса ответил запущенный nginx.
 
-![img_12](IMG/task12.png)
+![img_11](IMG/task12.png)
 
 При обращении на порт 8080 сервиса ответил запущенный multitool.
 
-Ссылка на манифест Deployment -
-Ссылка на манифест Service - 
-Ссылка на манифест с подом multitool - 
+Ссылка на манифест Deployment -https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/deployment.yaml
+Ссылка на манифест Service -  https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/service.yaml
+Ссылка на манифест с подом multitool -  https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/multitool.yaml
 
 ---
 
@@ -92,20 +92,20 @@
 
 1 - 2. Создаю манифест Deployment приложения nginx, который запустится только после запуска сервиса. В качестве Init-контейнера использую busybox:
 
-![img_13](IMG/task13.png)
+![img_13](IMG/task12.png)
 
 Deployment создан, проверю запущен ли под:
 
-![img_14](IMG/task14.png)
+![img_14](IMG/task13.png)
 
 Вижу, что под не запущен и находится в состоянии `Init:0/1`.
 
 
 3 - 4. Создаю манифест Service, применяю его и проверю запустился ли под nginx:
 
-![img_15](IMG/task15.png)
+![img_15](IMG/task14.png)
 
 После запуска сервиса, запустился под с nginx.
 
-Ссылка на манифест Deployment - 
-Ссылка на манифест Service - 
+Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/nginx-init-deploy.yaml
+Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/nginx-init-svc.yaml
