@@ -83,7 +83,9 @@
 При обращении на порт 8080 сервиса ответил запущенный multitool.
 
 Ссылка на манифест Deployment -https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/deployment.yaml
+
 Ссылка на манифест Service -  https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/service.yaml
+
 Ссылка на манифест с подом multitool -  https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/multitool.yaml
 
 ---
@@ -108,4 +110,5 @@ Deployment создан, проверю запущен ли под:
 После запуска сервиса, запустился под с nginx.
 
 Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/nginx-init-deploy.yaml
+
 Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.3/SRC/nginx-init-svc.yaml
