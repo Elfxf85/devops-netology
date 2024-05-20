@@ -57,6 +57,6 @@
 
 Ссылки на манифесты:
 
-Pod - 
+Pod - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.2/SRC/pod.yaml
 
-Service - 
+Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.2/SRC/service.yaml
