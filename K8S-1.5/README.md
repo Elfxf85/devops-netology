@@ -51,11 +51,11 @@
 
 Приложения видят друг друга.
 
-5. Ссылка на манифест Deployment c frontend - https://github.com/
+5. Ссылка на манифест Deployment c frontend - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.5/SRC/deploy_front.yaml
 
-   Ссылка на манифест Deployment c frontend - https://github.com/
+Ссылка на манифест Deployment c backend - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.5/SRC/deploy_back.yaml
 
-   Ссылка на манифест Service - https://github.com/
+Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.5/SRC/service.yaml
 
 ------
 
@@ -86,4 +86,4 @@ Ingress создан.
 
 При обращении к http://myingress.com/ получаю ответ от Nginx, при обращении к http://myingress.com/api получаю ответ от Multitool.
 
-4. Ссылка на манифест Ingress - https://github.com/
+4. Ссылка на манифест Ingress - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.5/SRC/ingress.yaml
