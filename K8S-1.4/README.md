@@ -23,7 +23,7 @@
 
 1. Cоздам новый namespace npart1:
 
-![img_1](IMG/task.png)
+![img_1](IMG/task1.png)
 
 Создаю манифест Deployment приложения, состоящего из двух контейнеров (nginx и multitool), с количеством реплик 3 шт.
 
@@ -62,10 +62,10 @@ Deployment создан, количество реплик равно трём.
 
 Nginx отвечает через сервис по порту 9001, multitool отвечает по порту 9002.
 
-5. Ссылка на манифест Deployment - https://github.com/
+5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/deployment.yaml
 
-   Ссылка на манифест Service - https://github.com/
-   Ссылка на манифест Pod - https://github.com/
+   Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/service.yaml
+   Ссылка на манифест Pod - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/multitool.yaml
 
 ### Решение задания 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
 
@@ -82,4 +82,4 @@ Nginx отвечает через сервис по порту 9001, multitool �
 Приложения доступны по локальному IP ноды, на порту 30007 отвечает nginx, на порту 30008 отвечает multitool.
 ![img_11](IMG/task10.png)
 
-3. Ссылка на манифест Service - https://github.com/
+3. Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/service-nodeport.yaml
