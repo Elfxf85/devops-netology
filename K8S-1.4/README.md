@@ -64,8 +64,9 @@ Nginx отвечает через сервис по порту 9001, multitool �
 
 5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/deployment.yaml
 
-   Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/service.yaml
-   Ссылка на манифест Pod - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/multitool.yaml
+Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/service.yaml
+
+Ссылка на манифест Pod - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.4/SRC/multitool.yaml
 
 ### Решение задания 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
 
