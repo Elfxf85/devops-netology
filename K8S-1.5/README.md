@@ -81,9 +81,9 @@ Ingress создан.
 
 ![img_10](IMG/task8.png)
 ![img_11](IMG/task88.png)
-![img_12](IMG/task81.png)
 ![img_13](IMG/task82.png)
 
 При обращении к http://myingress.com/ получаю ответ от Nginx, при обращении к http://myingress.com/api получаю ответ от Multitool.
+![img_12](IMG/task81.png)
 
 4. Ссылка на манифест Ingress - https://github.com/Elfxf85/devops-netology/blob/main/K8S-1.5/SRC/ingress.yaml
