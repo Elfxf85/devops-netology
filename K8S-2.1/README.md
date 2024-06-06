@@ -57,7 +57,7 @@ busybox пишет в фаил.
 
 Видно, что контейнер multitool читает файл.
 
-5. Ссылка на манифест Deployment - https://github.com/
+5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.1/SRC/deployment.yaml
 ------
 
 ### Выполнение задания 2
@@ -74,4 +74,4 @@ busybox пишет в фаил.
 
 Видно, что в контейнере пода присутствует директория /nodes-logs/ с файлом syslog, который примонтирован из машины - кластера MicroK8S.
 
-4. Ссылка на манифест DaemonSet - https://github.com/
+4. Ссылка на манифест DaemonSet - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.1/SRC/daemonset.yaml
