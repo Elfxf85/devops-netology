@@ -74,8 +74,7 @@
 
 Секрет создан.
 
-4. 
-Применяем измененные файлы
+4. Применяем измененные файлы
 ```
 kubectl apply -f nginx_configmap.yaml
 kubectl apply -f nginx_deployment.yaml
