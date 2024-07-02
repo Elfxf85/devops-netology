@@ -80,8 +80,8 @@
 
 Согласно манифесту роли и ее привязке к Namespace, у пользователя `staff` есть доступ подам, их логам и описанию.
 
-5. Ссылка на манифест Deployment - https://github.com/
+5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.4/SRC/deployment.yaml
 
-   Ссылка на манифест Role - https://github.com/
+   Ссылка на манифест Role - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.4/SRC/role.yaml
 
-   Ссылка на манифест RoleBinding - https://github.com/
+   Ссылка на манифест RoleBinding - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.4/SRC/rolebinding.yaml
