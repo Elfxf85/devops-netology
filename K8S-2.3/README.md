@@ -44,11 +44,11 @@
 
 Текст индексной страницы, из  ConfigMap и текст индексной страницы из контейнера пода одинаковы, следовательно она взята из содержимого ConfigMap.
 
-5. Ссылка на манифест Deployment - https://github.com/
+5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/deployment.yaml
 
-   Ссылка на манифест Service - https://github.com/
+   Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/service.yaml
 
-   Ссылка на манифест ConfigMap - https://github.com/
+   Ссылка на манифест ConfigMap - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/configmap.yaml
 
    ------
 
@@ -74,7 +74,15 @@
 
 Секрет создан.
 
-4. Создаю Ingress и необходимый Service, подключаю к нему SSL. Проверю доступ к сайту по HTTPS:
+4. 
+Применяем измененные файлы
+```
+kubectl apply -f nginx_configmap.yaml
+kubectl apply -f nginx_deployment.yaml
+kubectl apply -f ingress.yaml
+kubectl apply -f ngnix_svc.yaml
+```
+Проверю доступ к сайту по HTTPS:
 
 ![img_7](IMG/img_7.png)
 
@@ -82,11 +90,10 @@
 
 ![img_8](IMG/img_8.png)
 
-5. Ссылка на манифест Deployment - https://github.com/
+5. Ссылка на манифест Deployment - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/nginx_deployment.yaml
 
-   Ссылка на манифест ConfigMap - https://github.com/
+   Ссылка на манифест ConfigMap - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/nginx_configmap.yaml
 
-   Ссылка на манифест Service - https://github.com/
-
+   Ссылка на манифест Service - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/ngnix_svc.yaml
  
-   Ссылка на манифест Ingress - https://github.com/
+   Ссылка на манифест Ingress - https://github.com/Elfxf85/devops-netology/blob/main/K8S-2.3/SRC/ingress.yaml
