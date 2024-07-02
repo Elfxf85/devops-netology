@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+  namespace: config-test
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework for Netology</title>
+    </head>
+    <body>
+        <h1>K8s homework 2.3 </h1>
+        <p>This is a test page to demonstrate https.</p>
+    </body>
+    </html>
+  nginx.conf: |
+    events {}
+    http {
+        server {
+            listen 80;
+            return 301 https://$host$request_uri;
+        }
+
+        server {
+            listen 443 ssl;
+            ssl_certificate /etc/nginx/ssl/tls.crt;
+            ssl_certificate_key /etc/nginx/ssl/tls.key;
+
+            location / {
+                root /usr/share/nginx/html;
+                index index.html;
+            }
+        }
+    }
+
