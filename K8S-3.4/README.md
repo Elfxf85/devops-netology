@@ -91,7 +91,7 @@ containers:
 ```
 Применяем изменения
 ```
-kubectl apply -f deployment.yaml
+kubectl apply -f deployment20.yaml
 ```
 Поскольку в конфигурации нашего приложения отдельно никак не прописана стратегия обновления, то применяется стандартная `rolling update`, которая заменяет одни поды (более станая версия приложения) на другие (более новая версия приложения).
 
@@ -117,7 +117,7 @@ containers:
 ```
 Применяем извенения, хоть и знаем, что версии 1.28 [не существует](https://docs.nginx.com/nginx/releases/).
 ```
-kubectl apply -f deployment.yaml
+kubectl apply -f deployment20.yaml
 kubectl rollout history deployment my-deployment
 ```
 
@@ -147,7 +147,7 @@ kubectl rollout history deployment my-deployment
 
 ![img_7](IMG/img_8.png)
 
-Манифест [deployment.yaml](https://githubt.yaml)
+Манифест [deployment.yaml](https://github.com/Elfxf85/devops-netology/blob/main/K8S-3.4/SRC/deployment.yaml)
 
 
 ### Задание 3*. Создать Canary deployment
