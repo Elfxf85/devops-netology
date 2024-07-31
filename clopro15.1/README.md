@@ -53,15 +53,15 @@ variable "public_subnet" {
 }
 ```
 
-Также ресурс и переменные можно посмотреть в файлах [network.tf](https://github.com/network.tf) и [variables.tf](https://github.com/variables.tf).
+Также ресурс и переменные можно посмотреть в файлах [network.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/network.tf) и [variables.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/variables.tf).
 
 * Создаю в публичной подсети NAT-инстанс, присвоив ему адрес 192.168.10.254. В качестве image_id использую fd80mrhj8fl2oe87o4e1.
 
-Листинг инстанса можно посмотреть в файле [nat_instance.tf](https://github.com/nat_instance.tf)
+Листинг инстанса можно посмотреть в файле [nat_instance.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/nat_instance.tf)
 
 * Создаю в публичной подсети виртуальную машину с публичным IP.
 
-Листинг виртуальной машины можно посмотреть в файле [public.tf](https://github.com//public.tf)
+Листинг виртуальной машины можно посмотреть в файле [public.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/public.tf)
 
 Подключусь к виртуальной машине и проверю, есть ли из неё доступ к интернету:
 
@@ -93,7 +93,7 @@ variable "private_subnet" {
   description = "subnet name"
 }
 ```
-Также ресурс и переменные можно посмотреть в файлах [network.tf](https://github.com/network.tf) и [variables.tf](https://github.com/variables.tf).
+Также ресурс и переменные можно посмотреть в файлах [network.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/network.tf) и [variables.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/variables.tf).
 
 * Создаю route table. Добавляю статический маршрут, направляющий весь исходящий трафик private сети в NAT-инстанс:
 
@@ -110,7 +110,7 @@ resource "yandex_vpc_route_table" "private-route" {
 
 * Создаю в приватной подсети виртуальную машину с внутренним IP, внешний IP будет отсутствовать.
 
-Листинг виртуальной машины можно посмотреть в файле [private.tf](https://github.com/private.tf)
+Листинг виртуальной машины можно посмотреть в файле [private.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.1/src/private.tf)
 
 Для проверки доступности интернета на приватной виртуальной машине и работы NAT-инстанса скопирую свой приватный ssh ключ на публичную виртуальную машину. Далее с публичной виртуальной машины подключусь к приватной по внутреннему IP адресу:
 
