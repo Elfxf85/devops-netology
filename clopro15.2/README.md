@@ -68,7 +68,7 @@ locals {
 }
 ```
 
-Код Terraform для создания бакета можно посмотреть в файле [bucket.tf](https://github.com/bucket.tf)
+Код Terraform для создания бакета можно посмотреть в файле [bucket.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.2/terraform/bucket.tf)
 
 
 Загружу в бакет файл с картинкой:
@@ -87,7 +87,7 @@ resource "yandex_storage_object" "picture1" {
 
 Источником картинки будет файл, лежащий в моей домашней директории, за публичность картинки будет отвечать параметр `acl = "public-read"`.
 
-Код Terraform для загрузки картинки можно посмотреть в файле [upload_image.tf](https://github.com/)
+Код Terraform для загрузки картинки можно посмотреть в файле [upload_image.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.2/terraform/upload_image.tf)
 
 Проверю созданный бакет:
 
@@ -158,9 +158,9 @@ EOF
 
 Health check будет выполняться каждые 30 секунд и будет считаться успешной, если подключение к порту 80 виртуальной машины происходит успешно в течении 10 секунд.
 
-Полный код Terraform для создания группы виртуальных машин можно посмотреть в файле [group_vm.tf](https://github.com/)
+Полный код Terraform для создания группы виртуальных машин можно посмотреть в файле [group_vm.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.2/terraform/group_vm.tf)
 
-После применения кода Terraform получаем три настроенные по шаблону LAMP виртуальные машины (машина k8s осталась после предыдущего блока задачнии,держу для экспериментов):
+После применения кода Terraform получаем три настроенные по шаблону LAMP виртуальные машины (машина k8s осталась после предыдущего блока задания, держу для экспериментов):
 
 ![img_3](IMG/img_3.png)
 
@@ -224,7 +224,7 @@ resource "yandex_lb_network_load_balancer" "balancer" {
 
 Таким образом доступность сайта была сохранена.
 
-Полный код Terraform для создания сетевого балансировщика нагрузки можно посмотреть в файле [network_load_balancer.tf](https://github.com/f)
+Полный код Terraform для создания сетевого балансировщика нагрузки можно посмотреть в файле [network_load_balancer.tf](https://github.com/Elfxf85/devops-netology/blob/main/clopro15.2/terraform/network_load_balancer.tf)
 
 4. Создаю Application Load Balancer с использованием Instance group и проверкой состояния.
 
@@ -384,4 +384,4 @@ healthcheck {
 
 ![img_11](IMG/img_11.png)
 
-Весь код Terraform можно посмотреть по ссылке: https://github.com/
+Весь код Terraform можно посмотреть по ссылке: https://github.com/Elfxf85/devops-netology/tree/main/clopro15.2/terraform
