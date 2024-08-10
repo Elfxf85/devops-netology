@@ -1,0 +1,21 @@
+#cloud-config
+users:
+  - name: elfxf
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINYBgMSRvZbovkQ35GFpnnvIXYU+bpt4glQfFnJ1Sy58 elfxf@server1
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+#package_update: true
+#package_upgrade: true
+write_files:
+  - path: /var/www/html/index.html
+    content: |
+      <html>
+      <head><title>Welcome to LAMP</title></head>
+      <body>
+         <h1>Welcome to LAMP</h1>
+         <p>This is a LAMP server.</p>
+         <img src="https://storage.yandexcloud.net/mii-09-08-2024/picture1.jpg" />
+      </body>
+      </html>
